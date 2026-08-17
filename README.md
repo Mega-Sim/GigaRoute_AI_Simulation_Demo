@@ -1,4 +1,4 @@
-GigaRoute AI — Large-Scale FAB Simulation Performance Test
+**GigaRoute AI** — Large-Scale FAB Simulation Performance Test
 
 We are currently preparing GigaRoute Auto Simulation for its official release, and today I tested the simulation engine on a large semiconductor FAB layout using a standard laptop environment.
 
@@ -18,6 +18,8 @@ What makes this result particularly meaningful is the test environment:
 8 GB RAM / integrated graphics / standard laptop
 
 The simulation also completed without a system-wide traffic gridlock during the full 2-hour run, while continuously handling vehicle following, acceleration/deceleration, merge control, job assignment, station reservations, and traffic recovery.
+
+<img width="1280" height="579" alt="image" src="https://github.com/user-attachments/assets/4ac90bb8-f133-4be7-be75-7fb334fe5284" />
 
 And there is still significant room for optimization.
 
