@@ -2,16 +2,48 @@
 
 **English** | [한국어](README_KO.md) | [简体中文](README_ZH.md) | [日本語](README_JA.md)
 
-**Native Linux execution is now verified on Ubuntu 22.04 x86_64.**
+**Native Linux execution is verified on Ubuntu 22.04 x86_64.**
 
-GigaRoute Auto Simulation is being prepared as a cross-platform simulation product. While the Windows public package is still being prepared, the current Public Preview has now been built and launched successfully as a native Linux executable.
+GigaRoute Auto Simulation is being prepared as a cross-platform simulation product. The current Public Preview is available as a native Linux standalone package.
 
-## Public Preview download
+## Quick Start — download the correct files
 
-- Linux release: https://github.com/Mega-Sim/GigaRoute_AI_Simulation_Demo/releases/tag/public-preview-526-linux
-- Demo layout to use: [`Sample/Layout_Example.dxf`](Sample/Layout_Example.dxf)
+### 1. Download the application from GitHub Releases
 
-After launching the Linux demo, select **Open Layout** and open `Sample/Layout_Example.dxf`.
+**Linux Release:** https://github.com/Mega-Sim/GigaRoute_AI_Simulation_Demo/releases/tag/public-preview-526-linux
+
+In the Release page, open **Assets** and download:
+
+`GigaRoute-Auto-Simulation-Demo-Linux-x86_64.tar.gz`
+
+> **Do not download `Source code (zip)` or `Source code (tar.gz)` as the application.** These are GitHub-generated repository snapshots, not the GigaRoute executable package.
+
+The accompanying `.sha256` file can be used to verify the downloaded application package.
+
+### 2. Download the sample DXF separately from this repository
+
+**Sample layout:** [`Sample/Layout_Example.dxf`](Sample/Layout_Example.dxf)
+
+The example layout is maintained in the repository separately from the Release application package. Open the file link above and use **Download raw file** to save `Layout_Example.dxf` locally.
+
+### 3. Run the application
+
+```bash
+tar -xzf GigaRoute-Auto-Simulation-Demo-Linux-x86_64.tar.gz
+cd GigaRoute-Auto-Simulation-Demo
+chmod +x run_gigaroute.sh
+./run_gigaroute.sh
+```
+
+After GigaRoute starts:
+
+**Open Layout → select the downloaded `Layout_Example.dxf` → run the simulation.**
+
+### Download rule
+
+- **Application binaries:** GitHub **Releases / Assets only**
+- **Example DXF:** Repository **`Sample/` folder**
+- **GitHub Source code archives:** not application downloads
 
 Verified environment:
 
