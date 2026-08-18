@@ -1,0 +1,34 @@
+name: Sync Linux Release Notes
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - RELEASE_NOTES_LINUX.md
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-release-notes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update Linux Public Preview release body
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: public-preview-526-linux
+        shell: bash
+        run: |
+          set -euo pipefail
+          release_id="$(gh api "repos/${GITHUB_REPOSITORY}/releases/tags/${RELEASE_TAG}" --jq '.id')"
+          jq -n --rawfile body RELEASE_NOTES_LINUX.md '{body:$body}' > release-body.json
+          gh api \
+            --method PATCH \
+            "repos/${GITHUB_REPOSITORY}/releases/${release_id}" \
+            --input release-body.json
+          echo "[GigaRoute Release] Updated release notes for ${RELEASE_TAG} (release_id=${release_id})"
