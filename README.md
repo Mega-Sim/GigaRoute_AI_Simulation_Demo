@@ -39,6 +39,49 @@ After GigaRoute starts:
 
 **Open Layout → select the downloaded `Layout_Example.dxf` → run the simulation.**
 
+## View controls & shortcuts
+
+GigaRoute provides separate 2D and 3D view controls. You do **not** need to memorize every shortcut to get started — for normal viewing, the mouse wheel plus pan/orbit controls are enough.
+
+### 2D view
+
+| Input | Action |
+|---|---|
+| **Mouse wheel** | Zoom in / out around the cursor |
+| **Middle Mouse Button (MMB) + drag** | Pan the layout |
+| **Shift + Left Mouse Button (LMB) + drag** | Pan the layout |
+| **Ctrl + Shift + LMB + drag** | Drag zoom |
+| **LMB** | Select an item |
+| **Double-click LMB, then drag** | Pan the view |
+| **V**, **Home**, or **0** | Fit the whole layout to the current view |
+| **Ctrl + T** | Show / hide layout and station text |
+| **Ctrl + D** | Show / hide direction arrows |
+
+**Recommended 2D controls:** use the **mouse wheel** to zoom and **MMB + drag** or **Shift + LMB + drag** to move around a large layout. Press **V**, **Home**, or **0** whenever you want to return to a full-layout view.
+
+### 3D view
+
+| Input | Action |
+|---|---|
+| **Mouse wheel** | Zoom in / out |
+| **Ctrl + LMB + drag** | Orbit / rotate the camera |
+| **MMB + drag** | Pan the camera |
+| **Shift + Alt + LMB + drag** | Alternative pan control |
+| **Ctrl + Shift + Alt + LMB + drag** | Dolly the camera forward / backward |
+| **LMB + drag** | Rubber-band object selection |
+| **Right Mouse Button (RMB)** | Open the context menu |
+| **Ctrl + D** | Show / hide direction markers |
+
+**Recommended 3D controls:** use **Ctrl + LMB + drag** to rotate around the model, **MMB + drag** to move sideways, and the **mouse wheel** to zoom.
+
+### Mouse button names
+
+- **LMB** = Left Mouse Button
+- **MMB** = Middle Mouse Button / mouse-wheel click
+- **RMB** = Right Mouse Button
+
+> Tip: If the model becomes difficult to locate in 2D after aggressive zooming or panning, press **V**, **Home**, or **0** to fit the full layout back on screen.
+
 ### Download rule
 
 - **Application binaries:** GitHub **Releases / Assets only**
