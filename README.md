@@ -1,5 +1,7 @@
 # GigaRoute AI — Linux Native Preview
 
+**English** | [한국어](README_KO.md) | [简体中文](README_ZH.md) | [日本語](README_JA.md)
+
 **Native Linux execution is now verified on Ubuntu 22.04 x86_64.**
 
 GigaRoute Auto Simulation is being prepared as a cross-platform simulation product. While the Windows public package is still being prepared, the current Public Preview has now been built and launched successfully as a native Linux executable.
