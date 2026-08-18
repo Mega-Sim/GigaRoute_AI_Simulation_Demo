@@ -1,4 +1,44 @@
-**GigaRoute AI** — Large-Scale FAB Simulation Performance Test
+# GigaRoute AI — Linux Native Preview
+
+**Native Linux execution is now verified on Ubuntu 22.04 x86_64.**
+
+GigaRoute Auto Simulation is being prepared as a cross-platform simulation product. While the Windows public package is still being prepared, the current Public Preview has now been built and launched successfully as a native Linux executable.
+
+Verified environment:
+
+- Ubuntu 22.04 x86_64
+- GCC 11.x
+- Qt 6.8.3 (`gcc_64`)
+- Release build
+- Native C++/Qt6 executable
+
+Latest Linux build result:
+
+```text
+[52/52] Linking CXX executable gigaroute_qt
+```
+
+Launch command used for the verified build:
+
+```bash
+./build/public-preview-526/gigaroute_qt
+```
+
+This is a native Linux build of the same GigaRoute Auto Simulation product path — not a browser demo and not a Windows executable running through an emulation layer.
+
+The Linux release path will continue to be maintained alongside Windows. The current verified preview uses a Qt 6.8.x runtime environment; a standalone Linux distribution bundle will be published as the packaging work is completed.
+
+**Public Preview status**
+
+| Platform | Status |
+|---|---|
+| Ubuntu 22.04 x86_64 | Native build and launch verified |
+| Windows x64 | Public package in preparation |
+| Standalone Linux bundle | Packaging in progress |
+
+---
+
+## Large-Scale FAB Simulation Performance Test
 
 We are currently preparing GigaRoute Auto Simulation for its official release, and today I tested the simulation engine on a large semiconductor FAB layout using a standard laptop environment.
 
@@ -33,10 +73,7 @@ while continuing to improve simulation speed, memory efficiency, and large-scale
 
 The goal is to make large-scale material handling and autonomous vehicle simulation accessible without requiring high-end workstation hardware.
 
-GigaRoute AI
+GigaRoute AI  
 Simulation for large-scale autonomous material handling systems.
 
-#GigaRouteAI #Simulation #DigitalTwin #Semiconductor #SmartFactory #AMHS #OHT #AutonomousVehicles #Manufacturing #PhysicalAI #SoftwareEngineering
-
-
-이미지 보기
+#GigaRouteAI #Simulation #DigitalTwin #Semiconductor #SmartFactory #AMHS #OHT #AutonomousVehicles #Manufacturing #PhysicalAI #SoftwareEngineering #Linux
