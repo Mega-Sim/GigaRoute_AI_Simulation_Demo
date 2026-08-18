@@ -4,37 +4,28 @@
 
 GigaRoute Auto Simulation is being prepared as a cross-platform simulation product. While the Windows public package is still being prepared, the current Public Preview has now been built and launched successfully as a native Linux executable.
 
+## Public Preview download
+
+- Linux release: https://github.com/Mega-Sim/GigaRoute_AI_Simulation_Demo/releases/tag/public-preview-526-linux
+- Demo layout to use: [`Sample/Layout_Example.dxf`](Sample/Layout_Example.dxf)
+
+After launching the Linux demo, select **Open Layout** and open `Sample/Layout_Example.dxf`.
+
 Verified environment:
 
 - Ubuntu 22.04 x86_64
 - GCC 11.x
-- Qt 6.8.3 (`gcc_64`)
-- Release build
 - Native C++/Qt6 executable
-
-Latest Linux build result:
-
-```text
-[52/52] Linking CXX executable gigaroute_qt
-```
-
-Launch command used for the verified build:
-
-```bash
-./build/public-preview-526/gigaroute_qt
-```
+- Source-free Public Preview package with bundled Qt runtime
 
 This is a native Linux build of the same GigaRoute Auto Simulation product path — not a browser demo and not a Windows executable running through an emulation layer.
-
-The Linux release path will continue to be maintained alongside Windows. The current verified preview uses a Qt 6.8.x runtime environment; a standalone Linux distribution bundle will be published as the packaging work is completed.
 
 **Public Preview status**
 
 | Platform | Status |
 |---|---|
-| Ubuntu 22.04 x86_64 | Native build and launch verified |
+| Ubuntu 22.04 x86_64 | Public Preview release available |
 | Windows x64 | Public package in preparation |
-| Standalone Linux bundle | Packaging in progress |
 
 ---
 
