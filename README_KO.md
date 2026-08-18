@@ -4,14 +4,46 @@
 
 **Ubuntu 22.04 x86_64 환경에서 Linux 네이티브 실행을 확인했습니다.**
 
-GigaRoute Auto Simulation은 크로스플랫폼 시뮬레이션 제품으로 준비 중이며, 현재 Public Preview는 Linux 네이티브 실행파일과 독립 실행 패키지 형태로 공개되어 있습니다.
+GigaRoute Auto Simulation은 크로스플랫폼 시뮬레이션 제품으로 준비 중이며, 현재 Public Preview는 Linux 네이티브 독립 실행 패키지 형태로 공개되어 있습니다.
 
-## Public Preview 다운로드
+## Quick Start — 무엇을 다운로드해야 하나요?
 
-- Linux Release: https://github.com/Mega-Sim/GigaRoute_AI_Simulation_Demo/releases/tag/public-preview-526-linux
-- 사용 권장 데모 도면: [`Sample/Layout_Example.dxf`](Sample/Layout_Example.dxf)
+### 1. 프로그램은 GitHub Release에서 다운로드
 
-Linux 데모를 실행한 뒤 **Open Layout**에서 `Sample/Layout_Example.dxf`를 열어 사용해 주세요.
+**Linux Release:** https://github.com/Mega-Sim/GigaRoute_AI_Simulation_Demo/releases/tag/public-preview-526-linux
+
+Release 페이지의 **Assets**에서 아래 파일을 다운로드해 주세요.
+
+`GigaRoute-Auto-Simulation-Demo-Linux-x86_64.tar.gz`
+
+> **`Source code (zip)` / `Source code (tar.gz)`는 프로그램이 아닙니다. 다운로드하지 않아도 됩니다.** GitHub가 자동 생성하는 공개 Demo 저장소 스냅샷이며 GigaRoute 실행 패키지가 아닙니다.
+
+함께 제공되는 `.sha256` 파일로 다운로드한 프로그램 패키지의 무결성을 확인할 수 있습니다.
+
+### 2. 예제 DXF는 Repository에서 별도로 다운로드
+
+**예제 도면:** [`Sample/Layout_Example.dxf`](Sample/Layout_Example.dxf)
+
+예제 도면은 프로그램 Release 패키지와 별도로 Repository의 `Sample/` 폴더에서 관리합니다. 위 파일 링크를 연 뒤 **Download raw file**로 `Layout_Example.dxf`를 PC에 저장해 주세요.
+
+### 3. 프로그램 실행
+
+```bash
+tar -xzf GigaRoute-Auto-Simulation-Demo-Linux-x86_64.tar.gz
+cd GigaRoute-Auto-Simulation-Demo
+chmod +x run_gigaroute.sh
+./run_gigaroute.sh
+```
+
+실행 후:
+
+**Open Layout → 별도로 다운로드한 `Layout_Example.dxf` 선택 → Simulation 실행**
+
+### 다운로드 위치 요약
+
+- **프로그램 실행파일:** GitHub **Releases / Assets에서만 다운로드**
+- **예제 DXF:** Repository **`Sample/` 폴더에서 다운로드**
+- **GitHub Source code 압축파일:** 프로그램 다운로드 파일이 아님
 
 검증 환경:
 
@@ -28,17 +60,6 @@ Linux 데모를 실행한 뒤 **Open Layout**에서 `Sample/Layout_Example.dxf`�
 |---|---|
 | Ubuntu 22.04 x86_64 | Public Preview 릴리즈 제공 중 |
 | Windows x64 | 공개 패키지 준비 중 |
-
-## Linux 실행 방법
-
-```bash
-tar -xzf GigaRoute-Auto-Simulation-Demo-Linux-x86_64.tar.gz
-cd GigaRoute-Auto-Simulation-Demo
-chmod +x run_gigaroute.sh
-./run_gigaroute.sh
-```
-
-실행 후 **Open Layout** → `Sample/Layout_Example.dxf`를 선택해 주세요.
 
 ## 보안 / 배포
 
